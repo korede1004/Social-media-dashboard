@@ -101,14 +101,80 @@ main{
   background-color:hsl(230, 17%, 14%);
   padding: 30px 20px ;
 }
-.first-card{
-  height: 200px;
+.cards{
+  /* height: 200px; */
   width: 100%;
   background-color: hsl(228, 28%, 20%);
-  /* background-color: aqua; */
   position: relative;
   top: -70px;
   text-align: center;
-  padding: 5px 0;
+  padding: 20px;
+  border-top: 3px solid  hsl(208, 92%, 53%);
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.cards .nathanf{
+  display: flex;
+  justify-content:center;
+  padding-bottom: 20px;
+}
+.cards .nathanf p{
+  margin-left: 15px;
+  color: hsl(228, 34%, 66%) ;
+  font-size: 14px;
+  font-weight: 700;
+}
+.cards h1{
+  font-size:60px;
+  color: hsl(0, 0%, 100%);
+  
+}
+.cards .follower{
+  color: hsl(228, 34%, 66%) ;
+  letter-spacing: 6px;
+  padding-bottom: 15px;
+}
+.cards .count{
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.count img{
+  height: 5px;
+  margin-top: 8px;
+  margin-right: 7px;
+}
+.count p{
+  font-size: 14px;
+  font-weight: 700;
+  color:  hsl(0, 0%, 100%);
+}
+.second{
+  border-top: 3px solid hsl(203, 89%, 53%);
+}
+.second .count p{
+  color: hsl(163, 72%, 41%);
+}
+.third {
+  border-top: 3px solid  hsl(37, 97%, 70%);
+  
+}
+.third .count p{
+  color: hsl(163, 72%, 41%);
+  
+}
+.fourth{
+  border-top: 3px solid hsl(348, 97%, 39%);
+}
+.fourth .subscribers{
+  color:hsl(228, 34%, 66%) ;
+  letter-spacing:5px;
+}
+/* .fourth span.count img{
+  margin-bottom: 40px;
+} */
+.fourth .count p{
+  color: hsl(356, 69%, 56%);
+  margin-top: 2px;
 }
 /* main sends */
