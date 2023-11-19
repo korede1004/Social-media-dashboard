@@ -1,3 +1,40 @@
+:root{
+
+  /* Primary color */
+--Lime-Green: hsl(163, 72%, 41%);
+--Bright-Red: hsl(356, 69%, 56%);
+
+--Facebook: hsl(208, 92%, 53%);
+--Twitter: hsl(203, 89%, 53%);
+--Instagram: linear gradient hsl(37, 97%, 70%) to hsl(329, 70%, 58%)
+- YouTube: hsl(348, 97%, 39%)
+
+/* #### Dark Theme */
+
+/* --Toggle: linear gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%) */
+
+/* #### Light Theme */
+
+--Toggle-color: hsl(230, 22%, 74%);
+
+/* Neutral Dark Theme */
+
+--Very-Dark-Blue-BG: hsl(230, 17%, 14%);
+--Very-Dark-Blue-Top-BG-Pattern: hsl(232, 19%, 15%);
+--Dark-Desaturated-Blue-Card-BG: hsl(228, 28%, 20%);
+--Desaturated-Blue-Text: hsl(228, 34%, 66%);
+--White-Text: hsl(0, 0%, 100%);
+
+/* Light Theme */
+
+--White-BG: hsl(0, 0%, 100%);
+--Very-Pale-Blue-Top-BG-Pattern: hsl(225, 100%, 98%);
+--Light-Grayish-Blue-Card-BG: hsl(227, 47%, 96%);
+--Dark-Grayish-Blue-Text: hsl(228, 12%, 44%);
+--Very-Dark-Blue-Text: hsl(230, 17%, 14%);
+}
+
+
 *{
   margin: 0;
   padding: 0;
@@ -6,13 +43,13 @@
 
 body{
   font-family: 'Inter', sans-serif;
-
 }
+
 header{
   background-color:hsl(232, 19%, 15%) ;
   padding: 30px 20px;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+  /* border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px; */
   padding-bottom: 80px;
 }
 .social h1{
@@ -174,4 +211,58 @@ main{
   color: hsl(356, 69%, 56%);
   margin-top: 2px;
 }
-/* main sends */
+main > h1{
+  margin-top: -50px;
+  color: var(--White-Text);
+}
+/* second-cards-groups starts */
+.card{
+  width: 100%;
+  background-color: var(--Dark-Desaturated-Blue-Card-BG);
+  padding: 20px;
+  margin-block:20px ;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+}
+.views{
+  >p{
+    padding-block-end: 20px;
+    color: var(--Dark-Grayish-Blue-Text);
+  }
+  >h1{
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--White-Text);
+  }
+}
+
+.views-icon{
+  text-align: right;
+  >img{
+    padding-block-end: 40px;
+    ;
+  }
+  >span{
+    display: flex;
+    /* justify-content: space-between; */
+  }
+  >span img{
+    height: .4rem;
+    width: .5rem;
+    margin-inline-end: 5px;
+
+    margin-block-start: 7px;
+  }
+  >span p{
+    color: var(--Lime-Green);
+  }
+  
+  >span p.red{
+    color:red;
+  }
+}
+
+/* second-cards-groups ends */
+/* main ends */
