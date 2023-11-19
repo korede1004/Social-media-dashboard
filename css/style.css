@@ -42,11 +42,13 @@
 }
 
 body{
+  background-color:hsl(232, 19%, 15%) ;
+  /* background-color: hsl(228, 28%, 20%); */
   font-family: 'Inter', sans-serif;
 }
 
 header{
-  background-color:hsl(232, 19%, 15%) ;
+  background-color: var(--Dark-Desaturated-Blue-Card-BG);
   padding: 30px 20px;
   /* border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px; */
@@ -54,7 +56,7 @@ header{
 }
 .social h1{
   color:hsl(0, 0%, 100%) ;
-
+  
 }
 .toggle{
   display: flex;
@@ -135,7 +137,8 @@ input:checked + .slider:before {
 
 /* main starts */
 main{
-  background-color:hsl(230, 17%, 14%);
+  background-color: var(--Very-Dark-Blue-Top-BG-Pattern);
+  /* background-color:hsl(230, 17%, 14%); */
   padding: 30px 20px ;
 }
 .cards{
@@ -266,3 +269,74 @@ main > h1{
 
 /* second-cards-groups ends */
 /* main ends */
+@media screen and (min-width:1100px) {
+
+  
+  header{
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 144px;
+    padding-block-start: 30px;
+    padding-block-end: 140px;
+  }
+  hr{
+    display: none;
+  }
+  .toggle > p.dark-mode{
+    margin-inline-end: 10px;
+    margin-block-start: 5px;
+  }
+  main{
+    padding: 0 144px;
+  }
+  .first-four-card{
+    display: flex;
+    justify-content: space-between;
+    /* margin-top: -50px; */
+  }
+  .cards{
+    width: 23%;
+  }
+  .card{
+    width: 100%;
+  }
+  h1{
+    padding-block-start: 20px;
+  }
+  .second-cards-group{
+    /* display: flex; */
+    display: grid;
+    grid-template-areas:'a b c d ' 'e f g h';
+    column-gap: 2.5%;
+  }
+
+  .card1{
+    grid-area: a;
+  }
+  .card2{
+    grid-area: b;
+  }
+  .card3{
+    grid-area: c;
+  }
+  .card4{
+    grid-area: d; 
+  }
+  .card5{
+    grid-area: e;
+    
+  }
+  .card6{
+    grid-area: f;
+    
+  }
+  .card7{
+    grid-area: g;
+    
+  }
+  .card8{
+    grid-area: h;
+
+  }
+
+}
